@@ -25,13 +25,15 @@ namespace ProductManagementSystem.Infra.Data.Context
                 .HasKey(v => v.Id);
 
             modelBuilder.Entity<Produto>()
+                .Property(p => p.PrecoBase)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Produto>()
                 .HasMany(p => p.Variacoes)
-                .WithOne()
-                .HasForeignKey(v => v.ProdutoId);
+                .WithOne();
 
             modelBuilder.Entity<Variacao>()
-                .Property(v => v.ProdutoId)
-                .IsRequired();
+                .Property(v => v.ProdutoId);
         }
     }
 }
