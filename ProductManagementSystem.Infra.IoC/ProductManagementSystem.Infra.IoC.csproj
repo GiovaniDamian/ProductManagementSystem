@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProductManagementSystem.Domain\ProductManagementSystem.Domain.csproj" />
+    <ProjectReference Include="..\ProductManagementSystem.Infra.Data\ProductManagementSystem.Infra.Data.csproj" />
     <ProjectReference Include="..\ProductManagementSystem.Shared\ProductManagementSystem.Shared.csproj" />
   </ItemGroup>
 

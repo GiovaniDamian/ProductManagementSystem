@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProductManagementSystem.Domain.Services
 {
-    internal class ProdutoService : IProdutoService
+    public class ProdutoService : IProdutoService
     {
         private readonly IProdutoRepository _produtoRepository;
 

@@ -1,16 +1,21 @@
 ﻿using AutoMapper;
-using ProductManagementSystem.Domain.Entities;
+using Microsoft.Extensions.DependencyInjection;
+using ProductManagementSystem.Domain.Repositories;
+using ProductManagementSystem.Domain.Services;
 using ProductManagementSystem.Shared.DTOs;
+using ProductManagementSystem.Infra.IoC.AutoMapper;
 
-namespace ProductManagementSystem.Infra.IoC.Mappings
+namespace ProductManagementSystem.Infra.IoC
 {
-    public class DomainToDTOMappingProfile : Profile
+    public static class DependencyInjection
     {
-
-        public DomainToDTOMappingProfile()
+        public static IServiceCollection AddInfraIoC(this IServiceCollection services)
         {
-            CreateMap<Produto, ProdutoDTO>();
-            CreateMap<Variacao, VariacaoDTO>();
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<ProdutoService>();
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+            return services;
         }
     }
+
 }
