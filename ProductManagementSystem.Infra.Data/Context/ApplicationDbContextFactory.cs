@@ -8,7 +8,7 @@ namespace ProductManagementSystem.Infra.Data.Context
         public ApplicationDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseSqlServer("DefaultConnection");
+            if (!optionsBuilder.IsConfigured) optionsBuilder.UseSqlServer("DefaultConnection");
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }
