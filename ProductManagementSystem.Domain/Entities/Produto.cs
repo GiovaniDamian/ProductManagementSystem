@@ -13,6 +13,13 @@
         public decimal PrecoBase { get; private set; }
         public ICollection<Variacao>? Variacoes { get; set; }
 
+        public void AtualizarProduto(string nome, decimal precoBase)
+        {
+            ValidaCategoria(nome, precoBase);
+            Nome = nome;
+            PrecoBase = precoBase;
+        }
+
         private void ValidaCategoria(string nome, decimal preco)
         {
             if (string.IsNullOrEmpty(nome))

@@ -8,6 +8,11 @@ namespace ProductManagementSystem.Domain.Entities
 {
     public class Variacao
     {
+        public Variacao(string nomeVariacao)
+        {
+            NomeVariacao = nomeVariacao;
+        }
+
         public int Id { get; set; }
         public int ProdutoId { get; set; }
         public string NomeVariacao { get; set; }

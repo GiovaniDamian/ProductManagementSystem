@@ -11,7 +11,7 @@ using ProductManagementSystem.Infra.Data.Context;
 namespace ProductManagementSystem.Infra.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240818145220_InitialMigration")]
+    [Migration("20240818163758_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />

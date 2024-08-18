@@ -34,7 +34,21 @@ namespace ProductManagementSystem.Domain.Services
 
         public async Task UpdateAsync(Produto produto)
         {
-            await _produtoRepository.UpdateAsync(produto);
+            var produtoExistente = await _produtoRepository.GetByIdAsync(produto.Id);
+            if (produtoExistente != null)
+            {
+                produtoExistente.AtualizarProduto(produto.Nome, produto.PrecoBase);
+
+                produtoExistente.Variacoes?.Clear();
+
+                if (produto.Variacoes != null && produto.Variacoes.Any())
+                {
+                    produtoExistente.Variacoes = produto.Variacoes.Select(v =>
+                        new Variacao(v.NomeVariacao) { ProdutoId = produtoExistente.Id }
+                    ).ToList();
+                }
+                await _produtoRepository.UpdateAsync(produtoExistente);
+            }
         }
 
         public async Task DeleteAsync(int id)
