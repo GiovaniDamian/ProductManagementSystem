@@ -1,77 +1,77 @@
-# Sistema de Gestão de Produtos
+# Sistema de GestÃ£o de Produtos
 
-Um sistema abrangente para gestão de produtos e suas variações, desenvolvido com uma arquitetura em camadas baseada nos princípios do Domain-Driven Design (DDD) e construído utilizando .NET.
+Um sistema abrangente para gestÃ£o de produtos e suas variaÃ§Ãµes, desenvolvido com uma arquitetura em camadas baseada nos princÃ­pios do Domain-Driven Design (DDD) e construÃ­do utilizando .NET.
 
 ## Funcionalidades
 
-- **Gestão de Produtos:** Adicione, atualize e exclua produtos com vários atributos.
-- **Gestão de Categorias:** Organize produtos em categorias.
-- **Gerenciamento de Variações:** Administre variações de produtos como tamanho, cor e material.
-- **Gestão de Preços:** Defina preços base e aplique descontos.
+- **GestÃ£o de Produtos:** Adicione, atualize e exclua produtos com vÃ¡rios atributos.
+- **GestÃ£o de Categorias:** Organize produtos em categorias.
+- **Gerenciamento de VariaÃ§Ãµes:** Administre variaÃ§Ãµes de produtos como tamanho, cor e material.
+- **GestÃ£o de PreÃ§os:** Defina preÃ§os base e aplique descontos.
 
 ## Tecnologias Utilizadas
 
 - **.NET 7.0**: Framework para o backend.
 - **Entity Framework Core**: ORM para gerenciamento do banco de dados.
 - **SQL Server**: Banco de dados.
-- **Swagger**: Documentação da API.
+- **Swagger**: DocumentaÃ§Ã£o da API.
 - **AutoMapper**: Mapeamento de objetos.
 
 ## Arquitetura
 
-O sistema é dividido em várias camadas para garantir escalabilidade, manutenibilidade e separação de responsabilidades:
+O sistema Ã© dividido em vÃ¡rias camadas para garantir escalabilidade, manutenibilidade e separaÃ§Ã£o de responsabilidades:
 
-1. **Camada de Domínio**: Contém a lógica de negócios e as entidades principais.
-2. **Camada de Aplicação**: Gerencia os casos de uso e a lógica da aplicação.
-3. **Camada de Infraestrutura**: Lida com a persistência de dados e integrações externas.
-4. **Camada de Apresentação**: Camada de API usando ASP.NET Core.
+1. **Camada de DomÃ­nio**: ContÃ©m a lÃ³gica de negÃ³cios e as entidades principais.
+2. **Camada de AplicaÃ§Ã£o**: Gerencia os casos de uso e a lÃ³gica da aplicaÃ§Ã£o.
+3. **Camada de Infraestrutura**: Lida com a persistÃªncia de dados e integraÃ§Ãµes externas.
+4. **Camada de ApresentaÃ§Ã£o**: Camada de API usando ASP.NET Core.
 
-## Como Começar
+## Como ComeÃ§ar
 
-### Pré-requisitos
+### PrÃ©-requisitos
 
 - [.NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
-### Instalação
+### InstalaÃ§Ã£o
 
-1. **Clone o repositório:**
+1. **Clone o repositÃ³rio:**
     ```bash
     git clone https://github.com/GiovaniDamian/ProductManagementSystem.git
     cd ProductManagementSystem
     ```
 
 2. **Configure o banco de dados:**
-    - Atualize a string de conexão em `appsettings.json`.
-    - Execute as migrações para configurar o esquema do banco de dados:
+    - Atualize a string de conexÃ£o em `appsettings.json`.
+    - Execute as migraÃ§Ãµes para configurar o esquema do banco de dados:
       ```bash
       dotnet ef database update
       ```
 
-3. **Execute a aplicação:**
+3. **Execute a aplicaÃ§Ã£o:**
     ```bash
     dotnet run
     ```
 
-4. **Acesse a documentação da API:**
-    - Navegue até `http://localhost:{porta}/swagger` no seu navegador.
+4. **Acesse a documentaÃ§Ã£o da API:**
+    - Navegue atÃ© `http://localhost:{porta}/swagger` no seu navegador.
 
 ## Uso
 
 - **Endpoints da API**: Use a interface Swagger fornecida para interagir com a API.
-- **Interface de Administração**: Versões futuras incluirão uma interface web para administração.
+- **Interface de AdministraÃ§Ã£o**: VersÃµes futuras incluirÃ£o uma interface web para administraÃ§Ã£o.
 
 ## Contribuindo
 
-1. Faça um fork do repositório.
+1. FaÃ§a um fork do repositÃ³rio.
 2. Crie uma branch para sua feature (`git checkout -b feature/{nome_feature}`).
-3. Commit suas mudanças (`git commit -m 'Adiciona {nome_feature}'`).
-4. Faça push para a branch (`git push origin feature/{nome_feature}`).
+3. Commit suas mudanÃ§as (`git commit -m 'Adiciona {nome_feature}'`).
+4. FaÃ§a push para a branch (`git push origin feature/{nome_feature}`).
 5. Abra um Pull Request.
 
-## Licença
+## LicenÃ§a
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+DistribuÃ­do sob a licenÃ§a MIT. Veja `LICENSE` para mais informaÃ§Ãµes.
 
 ## Contato
 
@@ -88,3 +88,6 @@ Swagger:</br>
 
 Console:</br>
 <img height="160em" src="https://github.com/user-attachments/assets/66c311ed-5070-4e94-99c9-270beac7c908"/>
+
+POSTMAN: </br>
+<img height="360em" src="https://github.com/user-attachments/assets/d252dd94-d6d7-4880-bff0-65d7da79489b"/>
