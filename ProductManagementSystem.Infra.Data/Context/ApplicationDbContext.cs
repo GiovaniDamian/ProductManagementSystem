@@ -12,7 +12,6 @@ namespace ProductManagementSystem.Infra.Data.Context
     {
 
         public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Variacao> Variacoes { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
@@ -20,9 +19,6 @@ namespace ProductManagementSystem.Infra.Data.Context
         {
             modelBuilder.Entity<Produto>()
                 .HasKey(p => p.Id);
-
-            modelBuilder.Entity<Variacao>()
-                .HasKey(v => v.Id);
 
             modelBuilder.Entity<Produto>()
                 .Property(p => p.PrecoBase)
@@ -32,8 +28,6 @@ namespace ProductManagementSystem.Infra.Data.Context
                 .HasMany(p => p.Variacoes)
                 .WithOne();
 
-            modelBuilder.Entity<Variacao>()
-                .Property(v => v.ProdutoId);
         }
     }
 }

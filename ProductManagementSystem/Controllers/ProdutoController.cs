@@ -36,7 +36,7 @@ namespace ProductManagementSystem.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post(Produto produto)
+        public async Task<ActionResult> Post([FromBody] Produto produto)
         {
             await _produtoService.AddAsync(produto);
             return CreatedAtAction(nameof(Get), new { id = produto.Id }, produto);
