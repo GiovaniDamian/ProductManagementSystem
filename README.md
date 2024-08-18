@@ -89,5 +89,9 @@ Swagger:</br>
 Console:</br>
 <img height="160em" src="https://github.com/user-attachments/assets/66c311ed-5070-4e94-99c9-270beac7c908"/>
 
+### TESTES
 POSTMAN: </br>
-<img height="360em" src="https://github.com/user-attachments/assets/d252dd94-d6d7-4880-bff0-65d7da79489b"/>
+<img height="360em" src="https://github.com/user-attachments/assets/d252dd94-d6d7-4880-bff0-65d7da79489b"/></br>
+<img height="360em" src="https://github.com/user-attachments/assets/3035a1d6-cc6c-4c97-b21f-116e4a1a4591"/></br>
+<img height="360em" src="https://github.com/user-attachments/assets/2727dd2b-ded2-4271-bddf-7e38e8e2e174"/></br>
+<img height="360em" src="https://github.com/user-attachments/assets/8dae7546-b67f-4dc5-9e30-25adec8d2dd3"/>
